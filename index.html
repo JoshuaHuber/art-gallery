@@ -13,7 +13,7 @@
             </div>
         </div>
         <div class="container">
-            <div class="artistForm col-xs-12 col-md-4">
+            <div class="artistForm col-xs-12 col-md-3">
                 <h1>Add Artist</h1>
                 <form action="" class="artForm">
                     <div class="input-group form-group">
@@ -50,9 +50,21 @@
                     <button type="button" id="cancelBtn" class="btn btn-default" onclick="">Cancel</button>
                 </form>
             </div>
-        </div>
-        <div class="artistTable col-xs-12 col-md-8">
-
+            <div class="artistTable col-xs-12 col-md-8">
+                <table class="artistList table">
+                    <thead>
+                    <tr>
+                        <th>First Name</th>
+                        <th>Last Name</th>
+                        <th>Birth Date</th>
+                        <th>Email</th>
+                        <th>Art</th>
+                    </tr>
+                    </thead>
+                    <tbody id="tbody">
+                    </tbody>
+                </table>
+            </div>
         </div>
         <script
             src="https://code.jquery.com/jquery-3.2.1.js"
