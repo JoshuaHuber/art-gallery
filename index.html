@@ -7,8 +7,53 @@
         <link rel="stylesheet" href="styles/style.css">
     </head>
     <body>
-        
+        <div class="container">
+            <div class="headder">
+                <h1>Art Gallery</h1>
+            </div>
+        </div>
+        <div class="container">
+            <div class="artistForm col-xs-12 col-md-4">
+                <h1>Add Artist</h1>
+                <form action="" class="artForm">
+                    <div class="input-group form-group">
+                        <span class="input-group-addon">
+                            <span class="glyphicon glyphicon-user"></span>
+                        </span>
+                        <input type="text" class="form-control" name="artistFirst" id="artistFirst" placeholder="First Name" required="true">
+                    </div>
+                    <div class="input-group form-group">
+                        <span class="input-group-addon">
+                            <span class="glyphicon glyphicon-user"></span>
+                        </span>
+                        <input type="text" class="form-control" name="artistLast" id="artistLast" placeholder="Last Name" required="true">
+                    </div>
+                    <div class="input-group form-group">
+                        <span class="input-group-addon">
+                            <span class="glyphicon glyphicon-calendar"></span>
+                        </span>
+                        <input type="date" class="form-control" name="dob" id="dob" placeholder="Date of Birth" required="true">
+                    </div>
+                    <div class="input-group form-group">
+                        <span class="input-group-addon">
+                            <span class="glyphicon glyphicon-envelope"></span>
+                        </span>
+                        <input type="email" class="form-control" name="email" id="email" placeholder="email" required="true">
+                    </div>
+                    <div class="input-group form-group">
+                        <span class="input-group-addon">
+                            <span class="glyphicon glyphicon-picture"></span>
+                        </span>
+                        <input type="text" class="form-control" name="artName" id="artName" placeholder="Art Name" required="true">
+                    </div>
+                    <button type="button" id="addBtn" class="btn btn-success" onclick="">Add</button>
+                    <button type="button" id="cancelBtn" class="btn btn-default" onclick="">Cancel</button>
+                </form>
+            </div>
+        </div>
+        <div class="artistTable col-xs-12 col-md-8">
 
+        </div>
         <script
             src="https://code.jquery.com/jquery-3.2.1.js"
             integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
