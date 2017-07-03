@@ -11,10 +11,8 @@
             <div class="headder">
                 <h1>Art Gallery</h1>
             </div>
-        </div>
-        <div class="container">
-            <div class="artistForm col-xs-12 col-md-3">
-                <h1>Add Artist</h1>
+            <div class="artistForm col-xs-12">
+                <h3>Add Artist</h3>
                 <form action="" class="artForm">
                     <div class="input-group form-group">
                         <span class="input-group-addon">
@@ -22,12 +20,6 @@
                         </span>
                         <input type="text" class="form-control" name="artistName" id="artistName" placeholder="First Name" required="true">
                     </div>
-                    <!-- <div class="input-group form-group">
-                        <span class="input-group-addon">
-                            <span class="glyphicon glyphicon-user"></span>
-                        </span>
-                        <input type="text" class="form-control" name="artistLast" id="artistLast" placeholder="Last Name" required="true">
-                    </div> -->
                     <div class="input-group form-group">
                         <span class="input-group-addon">
                             <span class="glyphicon glyphicon-calendar"></span>
@@ -38,26 +30,34 @@
                         <span class="input-group-addon">
                             <span class="glyphicon glyphicon-envelope"></span>
                         </span>
-                        <input type="email" class="form-control" name="email" id="email" placeholder="email" required="true">
+                        <input type="email" class="form-control" name="email" id="email" placeholder="Email" required="false">
                     </div>
-                    <!-- <div class="input-group form-group">
+                    <div class="input-group form-group">
                         <span class="input-group-addon">
                             <span class="glyphicon glyphicon-picture"></span>
                         </span>
                         <input type="text" class="form-control" name="artName" id="artName" placeholder="Art Name" required="true">
-                    </div> -->
+                    </div>
+                    <div class="input-group form-group">
+                        <span class="input-group-addon">
+                            <span class="glyphicon glyphicon-picture"></span>
+                        </span>
+                        <input type="number" class="form-control" name="artPrice" id="artPrice" placeholder="Art Price" required="true">
+                    </div>
                     <button type="button" id="addBtn" class="btn btn-success" onclick="">Add</button>
                     <button type="button" id="cancelBtn" class="btn btn-default" onclick="">Cancel</button>
                 </form>
             </div>
-            <div class="artistTable col-xs-12 col-md-8">
+            <div class="artistTable col-xs-12">
                 <table class="artistList table">
                     <thead>
                     <tr>
-                        <th>First Name</th>
+                        <th>Name</th>
                         <th>Birth Date</th>
                         <th>Email</th>
                         <th>Art</th>
+                        <th>Price</th>
+                        <th>Controls</th>
                     </tr>
                     </thead>
                     <tbody id="tbody">
