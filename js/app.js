@@ -17,7 +17,7 @@ function ArtistGallery(){
     this.artists = {};
     this.attachClickHandlers = () => {
         this.addBtn.click(this.handleAddClicked);
-        this.cancelBtn.click(this.clear);
+        this.cancelBtn.click(this.clearInput);
     }
     this.handleAddClicked = () => {
         const name = this.artistNameInput.val();
